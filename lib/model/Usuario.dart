@@ -5,6 +5,24 @@ class Usuario {
 
   Usuario();
 
+  testUsuario() {
+    if (_usuario.isNotEmpty && _usuario.length >= 5) {
+      return true;
+    }
+  }
+
+  testEmail(String email) {
+    if (email.contains("@")) {
+      return true;
+    }
+  }
+
+  testSenha() {
+    if (_senha.length >= 8) {
+      return true;
+    }
+  }
+
   Map<String, dynamic> toMap() {
     Map<String, dynamic> map = {
       "usuario": this.usuario,
