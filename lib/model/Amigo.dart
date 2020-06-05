@@ -5,6 +5,17 @@ class Amigo {
 
   Amigo();
 
+  testUsuario(String usuario) {
+    if (usuario.length >= 8) {
+      return true;
+    }
+  }
+
+  testStatus(String status) {
+    if (status == "Aceito" || status == "Pendente") {
+      return true;
+    }
+  }
   Map<String, dynamic> toMap() {
     Map<String, dynamic> map = {
       "usuario": this.usuario,

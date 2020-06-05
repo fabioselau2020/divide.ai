@@ -15,6 +15,18 @@ class Imovel {
     return map;
   }
 
+  testNome(String nome) {
+    if (nome.isNotEmpty) {
+      return true;
+    }
+  }
+
+  testEndereco(String endereco) {
+    if (endereco.isNotEmpty) {
+      return true;
+    }
+  }
+
   String get nome => _nome;
 
   set nome(String value) {
