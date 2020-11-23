@@ -1,5 +1,4 @@
 class Pagamento {
-
   String _nome;
   String _valor;
   String _status;
@@ -10,19 +9,17 @@ class Pagamento {
 
   Pagamento();
 
-  Map<String, dynamic> toMap(){
-
+  Map<String, dynamic> toMap() {
     Map<String, dynamic> map = {
-      "uid" : this.idUsuarioLogado,
-      "dataVencimento" : this.dataVencimento,
+      "uid": this.idUsuarioLogado,
+      "dataVencimento": this.dataVencimento,
       "amigos": this.amigos,
       "status": this.status,
-      "nome" : this.nome,
-      "valor" : this.valor,
-      "dataPagamento" : this.dataPagamento,
+      "nome": this.nome,
+      "valor": this.valor,
+      "dataPagamento": this.dataPagamento,
     };
     return map;
-
   }
 
   testNome(String nome) {
@@ -37,27 +34,27 @@ class Pagamento {
     }
   }
 
-  testValor(double valor){
-    if(valor > 0){
+  testValor(double valor) {
+    if (valor > 0) {
       return true;
     }
   }
 
-  testDataPagamento(DateTime dataPagamento){
-    if(dataPagamento != null){
-      return true;
-    }
-  }
-  testDataVencimento(DateTime dataVencimento){
-    if(dataVencimento != null){
+  testDataPagamento(DateTime dataPagamento) {
+    if (dataPagamento != null) {
       return true;
     }
   }
 
+  testDataVencimento(DateTime dataVencimento) {
+    if (dataVencimento != null) {
+      return true;
+    }
+  }
 
   String get dataVencimento => _dataVencimento;
 
-  set dataVencimento(String value){
+  set dataVencimento(String value) {
     _dataVencimento = value;
   }
 
@@ -96,5 +93,4 @@ class Pagamento {
   set amigos(String value) {
     _amigos = value;
   }
-
 }

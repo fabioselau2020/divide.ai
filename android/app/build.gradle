@@ -24,7 +24,11 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+<<<<<<< HEAD
 apply plugin: 'com.google.gms.google-services'
+=======
+
+>>>>>>> 1a9f27c297042f7ec9e7b668210f96b66d8ade77
 android {
     compileSdkVersion 28
 
@@ -38,12 +42,20 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId "tech.divideai.app"
+=======
+        applicationId "com.example.divideai_tcc"
+>>>>>>> 1a9f27c297042f7ec9e7b668210f96b66d8ade77
         minSdkVersion 16
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+<<<<<<< HEAD
         multiDexEnabled true
+=======
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+>>>>>>> 1a9f27c297042f7ec9e7b668210f96b66d8ade77
     }
 
     buildTypes {
@@ -61,6 +73,12 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+<<<<<<< HEAD
     implementation "com.google.firebase:firebase-auth:18.0.0"
     implementation "com.google.firebase:firebase-firestore:20.0.0"
+=======
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+>>>>>>> 1a9f27c297042f7ec9e7b668210f96b66d8ade77
 }

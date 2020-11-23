@@ -16,6 +16,7 @@ class Amigo {
       return true;
     }
   }
+
   Map<String, dynamic> toMap() {
     Map<String, dynamic> map = {
       "usuario": this.usuario,

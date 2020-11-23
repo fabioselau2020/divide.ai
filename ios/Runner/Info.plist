@@ -11,7 +11,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+<<<<<<< HEAD
 	<string>tcc</string>
+=======
+	<string>divideai_tcc</string>
+>>>>>>> 1a9f27c297042f7ec9e7b668210f96b66d8ade77
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

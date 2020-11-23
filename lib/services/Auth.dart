@@ -13,11 +13,11 @@ class Auth {
     FirebaseUser usuarioLogado = await auth.currentUser();
     if (usuarioLogado == null) {
       print("Usuário não logado!");
-    }else{
+    } else {
       recuperarDadosUsuario();
     }
   }
-  
+
   void recuperarUidUsuario() async {
     FirebaseAuth auth = FirebaseAuth.instance;
     FirebaseUser usuarioLogado = await auth.currentUser();
